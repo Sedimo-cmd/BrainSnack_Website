@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pay Page</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="Paypage.css">
+	
+</head>
+<body>
+    <header>
+        <img src="logo.png" class="Logo">
+    </header>
+    
+     <div class="container">
+	    <form>
+		  <div class="row">
+		   <div class="col">
+		      <h2 class="title">Colection Method</h2>
+			  
+			  <div class="inputBox">
+			      <span>Full name :</span>
+				  <input type="text" placeholder="Name...">
+			  </div>
+			  
+			   <div class="inputBox">
+			    <span>Email :</span>
+				<input type="email" placeholder="Email@gmail.com">
+			   </div>
+			   
+			   <div class="inputBox">
+			    <span>Room no. </span>
+				<input type="number" placeholder="516">
+			   </div>
+			   
+			   <div class="inputFlex">
+			    <span>Collect</span>
+				<input type="radio" value="Collect" name="CollecMethod" class="Checkbar">
+				<span>Deliver</span>
+				<input type="radio" value="Deliver" name="CollecMethod" class="Checkbar">
+			   </div>
+			   
+			    <div class="inputBox">
+			      <input type="submit" value="Pay with Cash" class="PayBtn">
+			   </div>
+			 
+			  </div>
+			  
+		   <div class="col">
+		      <h2 class="title">Online Payment</h2>
+			  
+			  <div class="inputFlex">
+			      <span>Cards excepted :</span>
+				  <img src="Mastercard.png" alt="mastercard" class="Paymenticon">
+				  <img src="Visa.webp" alt="visa" class="Paymenticon">
+			  </div>
+			  
+			   <div class="inputBox">
+			    <span>Card holder Name:</span>
+				<input type="text" placeholder="Mr/Mrs Payer">
+			   </div>
+			   
+			   <div class="inputBox">
+			    <span>credit card number :</span>
+				<input type="number" placeholder="5106 3489 2990 3428">
+			   </div>
+			   
+			   <div class="flex">
+			       <div class="inputBox">
+			          <span>Exp year :</span>
+				      <input type="number" placeholder="2024">
+			       </div>
+				   
+				   <div class="inputBox">
+			          <span>CVV :</span>
+				      <input type="number" placeholder="123">
+			       </div>
+			   </div>	   
+			   
+			   <input type="submit" value="Pay with card" class="PayBtn">
+			 
+			    </div>
+		     </div>
+		   </div>
+		 </form> 
+	 </div>
+</body>
+</html>
