@@ -2,7 +2,7 @@
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
-	
+	font-family: Arial, sans-serif;
 }
 
 header
@@ -21,22 +21,21 @@ header
 	
 }
 
-.Logo
-{
-	border-radius:20px;
-	width:90px;
-	height: 90px;
+
+.Logo {
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
 }
 
-.navbar a
-{
+.navbar a {
     position:relative;
-	font-size:40px;
-	color:#ffe5cb;
-	font-weight:500;
-	text-decoration:none;
-	margin-left:40px;
-	margin-right:40px;
+    font-size: 20px;
+    color: #ffe5cb;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .navbar a::before 
@@ -55,68 +54,261 @@ header
 .navbar a:hover::before
 {
     transition: .3s;
-	color:#ff7da1;
+	color:#ffbdac;
 	width:100%;
 }
 
 .main
 {
-    min-height:100vh;
+    min-height:40vh;
 	width:100%;
-	background-color:#000;
-	background-image: url(About-background.jpg);
+	background-color: rgba(49,79,79,.6);
 	background-repeat:no-repeat;
 	background-size:100%;
 	display:flex;
-	justify-content:space-around;
-	align-items:center;
+	align-items:left;
 	
 }
 
-.main h1
+.Textspace
+{
+    min-height:80vh;
+	width:50%;
+	margin-left: 5em;
+	margin-top: 5em;
+	padding-left: 3rem ;
+	padding-top: 8rem ;
+	padding-right: 3rem ;
+	box-shadow: 20px 20px 50px rgba(0,0,0,.5);
+	cursor:pointer;
+	box-radius:35px;
+	border-radius:15px;
+	background: rgba(255,255,255,.1);
+	backdrop-filter:blur(10px);
+	transition:0.3s;
+}
+
+
+.Textspace h1
 {
 	font-size:100px;
-	color:white;
+	color: #ffe5cb;
+	text-shadow: 5px 5px 10px black;
 }
 
-.main h2
+
+.Textspace p
 {
-	font-size:50px;
-	color:white;
+	font-size:20px;
+	color: #ffe5cb;
 }
 
-.main p
+.TeamHeading
 {
-	font-size:30px;
-	color:white;
+    margin: 0;
+    padding: 4em;
+    align-items: center;
+    background-color: rgba(49,79,79,.6);
 }
 
-.Storebtn
+.TeamHeading h1
 {
-    font-size:30px;
-	background:#ffa4c8;
-	color:white;
-	text-decoration:none;
-	width:200px;
-	height:40px;
-	border: 2px solid #ffb98b;
-	border-radius:30px;
-	font-weight:bold;
-	margin-top:40px;
-	transition: .4s ease;
+    font-size:100px;
+    color:#ffe5cb;
+    text-shadow: 5px 5px 10px black;
+}
+
+.OurTeam
+{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    background-color: rgba(49,79,79,.6);
+    height: 15%;
+    width:90%;
 	
 }
 
-
-.Storebtn:hover
-{
-	background: #ff82fb;
-	color:#ffb98b;
-	border:2px solid #ffb98b;
-	box-shadow: 0 0 25px #ffb98b, 0 0 25px #ffb98b;
-	cursor:pointer;
-	transform: scale(1.2);
+.TeamCard
+{   
+    position: relative;
+    justify-content: center;
+    width:19em;
+    height:25em;
+    overflow:hidden;
+    margin-bottom:3em;
+    box-shadow: 20px 20px 50px rgba(0,0,0,.5);
+	border-radius:10px;
+	transform-style: preserve-3d;
+	transform-origin: center;
+    
 }
+
+.TeamCard .ImgBox img
+{
+    width:100%;
+    height:100%;
+    
+}
+
+.TeamCard .MemberInfo
+{
+    position:absolute;
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    width:100%;
+    height:30%;
+    border:1px rgba(0,0,0,0.3);
+    border-radius:15px;
+    backdrop-filter: blur(15px);
+    transition:bottom 0.5s;
+    transition-delay:0.2s;
+   // bottom: -35%;
+}
+
+.TeamCard:hover .MemberInfo
+{
+    bottom:0;
+    transition-delay:0.1s;
+    color:white;
+}
+
+.TeamCard .MemberInfo h2
+{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight:500;
+    font-size:20px;
+    text-align:center;
+    margin:15px 0 15px;
+    line-height:1.1em;
+    transition:0.5s;
+    transition-delay:0.2s;
+    opacity: 0;
+    transform: translateY(-40px);
+    
+}
+
+.TeamCard:hover .MemberInfo h2
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.TeamCard .MemberInfo h2 span
+{
+    font-size:15px;
+    font-weight:300;
+    text-transform: initial;
+    
+}
+
+.TeamCard .MemberInfo .SocialMedia
+{
+   position:relative;
+   bottom:10px;
+   display:flex;
+   
+   
+}
+
+.TeamCard .MemberInfo .SocialMedia li
+{
+    list-style:none;
+    margin:0 10px;
+    transform:translateY(40px);
+    transition:0.5s;
+    opacity: 0;
+    transition-delay:calc(0.2s* var(--i));
+}
+
+.TeamCard:hover .MemberInfo .SocialMedia li
+{
+    transform: translateY(0) ;
+    opacity: 1;
+}
+
+.TeamCard .MemberInfo .SocialMedia li a 
+{   
+    color:white;
+    font-size:25px;
+    
+}
+
+.TeamCard:nth-child(1)
+{
+    left:20%;
+    z-index:1;
+    opacity: 0.1;
+    transform: scale(0.5);
+}
+
+.TeamCard:nth-child(2)
+{
+    left:30%;
+    z-index:2;
+    opacity:0.3;
+    transform: scale(0.6);
+}
+
+.TeamCard:nth-child(3)
+{
+    left:0%;
+    z-index:3;
+    opacity:1;
+    transform: scale(1);
+}
+
+.TeamCard:nth-child(4)
+{
+    left:-30%;
+    z-index:2;
+    opacity:0.3;
+    transform: scale(0.6);
+}
+
+.TeamCard:nth-child(5)
+{
+    left:-20%;
+    z-index:1;
+    opacity:0.1;
+    transform: scale(0.5);
+}
+
+.TeamContainer
+{
+  display: flex;    
+}
+
+.TeamContainer .Controls span
+{
+    
+    border:2px solid #ffe5cb;
+    border-radius:50%;
+    font-size:3em;
+	color: #ffe5cb;
+    
+
+}
+
+.TeamContainer .Controls span:hover
+{
+    color:#333;
+    border:2px solid #333;
+    transform:scale(1.5);
+    cursor: pointer;
+}
+
+.TeamContainer .Controls
+{
+    background-color: rgba(49,79,79,.6);
+    position: relative;
+    width:5%;
+    align-content: center;
+    padding-left:1em;
+}
+
 
 
 footer
@@ -205,9 +397,11 @@ footer
     
 .footerCont a:hover
 {
-   color:#ffa4c8;
+   color: #ffe5cb;;
    
 }
+
+
 
 .social-icons i:hover
 {
@@ -228,20 +422,21 @@ footer h2
 {
 	font-size:50px;
 	margin-bottom:20px;
-	color:#ffbdac;
+	color:#ffe5cb;
 }
 
 footer h3
 {
 	font-size:50px;
 	margin-bottom:20px;
-	color:#ffa4c8;
+	color: #ffe5cb;
+	text-shadow: 5px 5px 10px black;
 }
 
 footer p
 {
 	font-size:20px;
-	color:#ffbdac;
+	color:#ffe5cb;
 	padding:10px;
 }
 

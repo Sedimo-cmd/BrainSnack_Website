@@ -2,7 +2,7 @@
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
-	
+	font-family: Arial, sans-serif;
 }
 
 header
@@ -21,22 +21,20 @@ header
 	
 }
 
-.Logo
-{
-	border-radius:20px;
-	width:90px;
-	height: 90px;
+.Logo {
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
 }
 
-.navbar a
-{
+.navbar a {
     position:relative;
-	font-size:40px;
-	color:#ffe5cb;
-	font-weight:500;
-	text-decoration:none;
-	margin-left:40px;
-	margin-right:40px;
+    font-size: 20px;
+    color: #ffe5cb;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .navbar a::before 
@@ -55,17 +53,16 @@ header
 .navbar a:hover::before
 {
     transition: .3s;
-	color:#ff7da1;
+	color:#ffbdac;
 	width:100%;
 }
 
 .container
-{
+{   
+    color:#ffe5cb;
     min-height:100vh;
 	width:100%;
-	background-color:#000;
-	background-image: url(About-background.jpg);
-	background-repeat:no-repeat;
+	background-color: rgba(49,79,79,.6);
 	background-size:100%;
 	display:flex;
 	justify-content:center;
@@ -86,6 +83,12 @@ header
 	background: rgba(255,255,255,.1);
 	backdrop-filter:blur(10px);
 	flex-wrap:wrap;
+	transition: .3s;
+}
+
+.container form:hover
+{
+   transform: scale(1.2);
 }
 
 .container form input
@@ -104,7 +107,7 @@ header
 
 .container form input::placeholder
 {
-	color: white;
+	color: #ffecb;
 }
 
 .container form #lastName,
@@ -115,7 +118,7 @@ header
 
 .container form h1
 {
-	color: white;
+
 	font-weight:500;
 	font-size:60px;
 	width:600px;
@@ -126,7 +129,6 @@ header
 
 .container form h2
 {
-	color: white;
 	font-weight:500;
 	font-size:30px;
 	width:600px;
@@ -165,7 +167,7 @@ textarea::-webkit-scrollbar-thumb
 .container form #button
 {
 	border:none;
-	background:white;
+	background:#ffe5cb;
 	border-radius:20px;
 	margin-top:20px;
 	font-weight:600;
@@ -183,10 +185,11 @@ textarea::-webkit-scrollbar-thumb
 	opacity:.7;
 }
 
+
 .Storebtn
 {
     font-size:30px;
-	background:white;
+	background:#ffe5cb;
 	width:200px;
 	height:40px;
 }
@@ -208,20 +211,20 @@ footer h2
 {
 	font-size:50px;
 	margin-bottom:20px;
-	color:#ffbdac;
+	color:#ffe5cb;
 }
 
 footer h3
 {
 	font-size:50px;
 	margin-bottom:20px;
-	color:#ffbdac;
+	color:#ffe5cb;
 }
 
 footer p
 {
 	font-size:20px;
-	color:#ffbdac;
+	color:#ffe5cb;
 }
 
 .bottomBar

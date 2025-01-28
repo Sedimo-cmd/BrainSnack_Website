@@ -1,27 +1,81 @@
-*
-{
-	font-family:Poppins,san-serif;
-	margin:0;
+* {
+	margin: 0;
 	padding:0;
-	box-sizing:border-box;
-	outline:none;
-	border:none;
-	text-transform:capitalisation;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
 	
 }
 
-.Logo
+body
 {
-	border-radius:20px;
-	width:90px;
-	height: 90px;
-	margin:20px 20px 20px 20px;
+   min-height:100vh;
+   background-color: rgba(49,79,79,.6);
+   background-size: cover;
+   background-position:center; 
 }
 
-header 
-{
-    background-color: #bcff0b;
+
+
+.Logo {
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
 }
+
+
+header
+{
+	position:sticky;
+	top:0;
+	left:0;
+	width:100%;
+	padding: 20px 100px;
+	margin-bottom: 20px;
+	background: rgb(49,79,79);
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	z-index:100;
+	
+}
+
+.navbar a {
+    position:relative;
+    font-size: 20px;
+    color: #ffe5cb;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar a::before {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #ffbdac;
+    transform: translate(-50%, -50%);
+    transition-duration: .5s;
+}
+
+
+.navbar a:hover
+{
+    transition: .3s;
+	color:#ffbdac;
+	width:100%;
+}
+
+.navbar a:hover::before
+{
+    transition: .3s;
+	color:#ffbdac;
+	width:100%;
+}
+
 
 
 .container
@@ -29,10 +83,9 @@ header
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	padding:25px;
 	min-height: 100vh;
-	background:linear-gradient(90deg,#bcff0b 60%,#bcff0b 40%);
-	padding-bottom:70px;
+	
+	
 }
 
 .container form
@@ -40,7 +93,7 @@ header
 	padding:20px;
 	width:700px;
 	border-radius:20px;
-	background:white;
+	background-color: rgba(49,79,79,.6);
 	box-shadow:0 5px 10px rgba(0,0,0,.2);
 }
 
@@ -65,7 +118,7 @@ header
 
 .Checkbar
 {
-    accent-color:green;
+    accent-color:#ffe5cb;
 }
 
 .container form .row .col .title
@@ -140,7 +193,7 @@ header
    width:100%;
    padding:12px;
    font-size:17px;
-   background:green;
+   background: rgb(49,79,79);
    border-radius: 10px;
    color:white;
    margin-top:5px;
