@@ -28,15 +28,15 @@ Card.addEventListener("mouseleave", () => {
     Card.style.transform = '';
 });
 
-const prev = document.querySelector('.Controls#Prev span');
-const next = document.querySelector('.Controls#Next span');
+const prev = document.querySelector(' #Prev span');
+const next = document.querySelector(' #Next span');
 
 next.addEventListener('click', function() {
-    const items = document.querySelectorAll('.OurTeam .TeamCard');
+    const items = document.querySelectorAll('.TeamCard');
     document.querySelector('.OurTeam').appendChild(items[0]);
 });
 
 prev.addEventListener('click', function() {
-    const items = document.querySelectorAll('.OurTeam .TeamCard');
-    document.querySelector('.OurTeam').prepend(items[items.length - 1]);
+    const items = document.querySelectorAll('.TeamCard');
+    document.querySelector('.OurTeam').prepend(items[items.length -1]);
 });
