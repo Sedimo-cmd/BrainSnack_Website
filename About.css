@@ -170,7 +170,7 @@ header
 .TeamCard:hover .MemberInfo
 {
     bottom:0;
-    transition-delay:0.1s;
+    transition-delay:0.1s ;
     color:white;
 }
 
@@ -327,8 +327,8 @@ footer
    margin:auto;
    padding:10px;
    display: flex;
-	flex-direction:column;
-	align-items:center;
+   flex-direction:column;
+   align-items:center;
 }
 
 .footerCont ul
@@ -360,7 +360,7 @@ footer
     top:100%;
     width:0;
     height:2px;
-    background:#ffa4c8;
+    background:#ffe5cb;
     transition-duration: .5s;
 }
 
@@ -391,23 +391,35 @@ footer
 .footerCont a 
 {
     text-decoration:none;
-    font-size:20px;
-    color:#ffbdac;
+    font-size:15px;
+    color: #ffe5cb;
 }
     
 .footerCont a:hover
 {
-   color: #ffe5cb;;
+   color:#ffbdac;
    
 }
 
+.Socials ul 
+{
+    
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+}
 
+.Socials li
+{
+     margin:0 10px;
+}    
 
 .social-icons i:hover
 {
     color:#ffa4c8;
 }
-
 .bottomBar
 {
     background:black;
@@ -420,14 +432,14 @@ footer
 
 footer h2
 {
-	font-size:50px;
+	font-size:30px;
 	margin-bottom:20px;
 	color:#ffe5cb;
 }
 
 footer h3
 {
-	font-size:50px;
+	font-size:30px;
 	margin-bottom:20px;
 	color: #ffe5cb;
 	text-shadow: 5px 5px 10px black;
@@ -435,7 +447,7 @@ footer h3
 
 footer p
 {
-	font-size:20px;
+	font-size:10px;
 	color:#ffe5cb;
 	padding:10px;
 }

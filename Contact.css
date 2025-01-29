@@ -199,32 +199,133 @@ footer
 {
 	background: rgba(49,79,79,.9);
 	height:20%;
-	padding:100px 100px;
 	display:flex;
 	justify-content:space-between;
-	flex-direction: column;
-	text-align:center;
+	flex-direction: row;
 	
 }
 
+.footerCont
+{
+   width:30%;
+   margin:auto;
+   padding:10px;
+   display: flex;
+   flex-direction:column;
+   align-items:center;
+}
+
+.footerCont ul
+{
+    text-align:center;
+}
+
+.list
+{
+    padding:0;
+}
+
+.list li
+{
+    width:auto;
+    text-align:center;
+    list-style-type: none;
+    padding:10px;
+    position:relative;
+    
+}
+
+.list li::before
+{
+    content:"";
+    position:absolute;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:100%;
+    width:0;
+    height:2px;
+    background:#ffe5cb;
+    transition-duration: .5s;
+}
+
+.list li:hover::before
+{
+    width:70px;
+}
+
+.social-icons
+{
+    text-align:center;
+    padding:0;
+}    
+
+.social-icons li
+{
+    display:inline-block;
+    text-align:center;
+    padding:5px;
+}
+
+.social-icons i
+{
+   color:white;
+   font-size:25px;
+}
+
+.footerCont a 
+{
+    text-decoration:none;
+    font-size:15px;
+    color: #ffe5cb;
+}
+    
+.footerCont a:hover
+{
+   color:#ffbdac;
+   
+}
+
+.Socials ul 
+{
+    
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+}
+
+.Socials li
+{
+     margin:0 10px;
+}    
+
+.social-icons i:hover
+{
+    color:#ffa4c8;
+}
+
+
 footer h2
 {
-	font-size:50px;
+	font-size:30px;
 	margin-bottom:20px;
 	color:#ffe5cb;
 }
 
 footer h3
 {
-	font-size:50px;
+	font-size:30px;
 	margin-bottom:20px;
-	color:#ffe5cb;
+	color: #ffe5cb;
+	text-shadow: 5px 5px 10px black;
 }
 
 footer p
 {
-	font-size:20px;
+	font-size:10px;
 	color:#ffe5cb;
+	padding:10px;
 }
 
 .bottomBar
