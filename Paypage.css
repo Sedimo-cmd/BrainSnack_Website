@@ -124,7 +124,7 @@ header
 .container form .row .col .title
 {
    font-size:20px;
-   color:#333;
+  color: #ffe5cb;
    padding-bottom:5px;
    text-transform:uppercase; 
 }
@@ -132,6 +132,7 @@ header
 .container form .row .col .inputBox
 {
    margin:15px 0; 
+  
 
 }
 
@@ -162,11 +163,13 @@ header
    padding:10px 15px;
    font-size:15px;
    text-transform:none;
+   
 }
 
 .container form .row .col .inputBox:focus
 {
    border:1px solid #333; 
+   
 }
 
 .container form .row .col .flex
@@ -195,7 +198,7 @@ header
    font-size:17px;
    background: rgb(49,79,79);
    border-radius: 10px;
-   color:white;
+   color:#ffe5cb;
    margin-top:5px;
    cursor:pointer; 
 }
